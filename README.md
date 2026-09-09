@@ -1,4 +1,4 @@
-## SPINNE
+## Spinne
 
 Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
 

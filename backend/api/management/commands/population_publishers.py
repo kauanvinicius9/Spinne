@@ -10,7 +10,7 @@ class Command(BaseCommand):
    def add_arguments(self, parser):
         parser.add_argument(
             "--file",
-            default=os.path.join(settings.BASE_DIR, "api","population","publishers.csv")
+            default=os.path.join(settings.BASE_DIR,"api","population","publishers.csv")
         )
         parser.add_argument("--truncate",action="store_true")
         parser.add_argument("--update",action="store_true")

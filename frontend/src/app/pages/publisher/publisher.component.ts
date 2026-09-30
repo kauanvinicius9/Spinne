@@ -10,6 +10,7 @@ import { AuthService } from '../../services/auth.services';
   templateUrl: './publisher.component.html',
   styleUrls: ['./publisher.component.css']
 })
+  
 export class PublisherComponent {
   readonly error = signal(false);
 

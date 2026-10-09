@@ -19,26 +19,7 @@ class BookSerializer(serializers.ModelSerializer):
     cover_url = serializers.SerializerMethodField()
     class Meta:
         model = Book
-        fields = [
-            "id",
-            "title", 
-            "subtitle", 
-            "author", 
-            "publisher", 
-            "isbn", 
-            "description", 
-            "language", 
-            "year", 
-            "pages", 
-            "price", 
-            "stock", 
-            "discount", 
-            "available", 
-            "dimensions", 
-            "width", 
-            "cover",
-            "cover_url",  
-        ]
+        fields = ["id", "title", "subtitle", "author", "publisher", "isbn", "description", "language", "year", "pages", "price", "stock", "discount", "available", "dimensions", "width", "cover", "cover_url"]
 
     def get_cover_url(self, obj):
         request=self.context.get("request")
